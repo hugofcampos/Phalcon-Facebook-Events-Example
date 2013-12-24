@@ -3,20 +3,24 @@ vagrant-phalcon
 
 A Phalcon setup project using Vagrant.
 
-Prerequisites
+Prerequisites:
 
-Vagrant 1.2.3
+Vagrant 1.3.5 - http://downloads.vagrantup.com/
 
-Virtualbox 4.2
+Virtualbox 4.3.6 - https://www.virtualbox.org/wiki/Downloads
 
-If you're using Ubuntu 12.10 additional reconfiguration of kernel headers is required, after VirtualBox installation as following:
+MySQL user ingresse/ingresse
 
--- Install kernel headers linux-headers-3.5.0-17-generic
-$ sudo apt-get install linux-headers-3.5.0-17-generic
+This package use puppet and was created with puphpet.com.
 
--- Reconfiguration of VirtualBox
+See below all components installed:
 
-$ sudo /etc/init.d/vboxdrv setup
-
-
-MySQL root password: 123456
+Ubuntu
+MySQL
+MongoDB
+Apache2
+PHP
+Phalcon
+Phalcon Tools
+Zend Framework 1
+XDebug
