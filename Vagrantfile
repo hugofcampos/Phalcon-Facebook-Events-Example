@@ -29,9 +29,9 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision :shell, :path => "shell/install_phalcon.sh"
   config.vm.provision :shell, :path => "shell/install_phalcon_devtools.sh"
+  config.vm.provision :shell, :path => "shell/install_phpqatools.sh"
   config.vm.provision :shell, :path => "shell/install_zf1.sh"
   config.vm.provision :shell, :path => "shell/install_mongodb.sh"
-
 
 
   config.ssh.username = "vagrant"
