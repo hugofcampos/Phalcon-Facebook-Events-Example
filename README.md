@@ -15,12 +15,12 @@ This package use puppet and was created with puphpet.com.
 
 See below all components installed:
 
-Ubuntu
-MySQL
-MongoDB
-Apache2
-PHP
-Phalcon
-Phalcon Tools
-Zend Framework 1
-XDebug
+Ubuntu;
+MySQL;
+MongoDB;
+Apache2;
+PHP;
+Phalcon;
+Phalcon Tools;
+Zend Framework 1;
+XDebug;
