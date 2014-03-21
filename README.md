@@ -1,26 +1,18 @@
-vagrant-phalcon
+Phalcon - Facebook Events Example
 ===============
 
-A Phalcon setup project using Vagrant.
+This is a small example of Phalcon Framework.
 
-Prerequisites:
 
-Vagrant 1.3.5 - http://downloads.vagrantup.com/
+#Instructions
 
-Virtualbox 4.3.6 - https://www.virtualbox.org/wiki/Downloads
+Clone this repo and run:
 
-MySQL user ingresse/ingresse
+    $ cd /path/to/this/repo
+    $ vagrant up
 
-This package use puppet and was created with puphpet.com.
+Add the following line to your /etc/hosts (%Sysdir%/drivers/etc/hosts in Windows)
 
-See below all components installed:
+    192.168.56.115 ingresse.dev
 
-Ubuntu;
-MySQL;
-MongoDB;
-Apache2;
-PHP;
-Phalcon;
-Phalcon Tools;
-Zend Framework 1;
-XDebug;
+Access (ingresse.dev)[http://ingresse.dev] in your browser.

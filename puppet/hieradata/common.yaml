@@ -71,7 +71,7 @@ apache:
             servername: ingresse.dev
             serveraliases:
                 - www.ingresse.dev
-            docroot: /var/www/
+            docroot: /var/www/public
             port: '80'
             setenv:
                 - 'APP_ENV dev'
