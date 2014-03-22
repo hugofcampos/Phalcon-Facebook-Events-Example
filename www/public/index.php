@@ -1,6 +1,10 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
+
 try {
+
+    $config = new Phalcon\Config\Adapter\Ini('../app/config/config.ini');
 
     //Register an autoloader
     $loader = new \Phalcon\Loader();
@@ -11,6 +15,8 @@ try {
 
     //Create a DI
     $di = new Phalcon\DI\FactoryDefault();
+
+    $di->setShared('config', $config);
 
     //Setup the view component
     $di->set('view', function(){

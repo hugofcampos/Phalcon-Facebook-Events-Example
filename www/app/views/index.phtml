@@ -35,9 +35,14 @@
 
     <div class="jumbotron">
       <div class="container">
+        <?php if(!$user_id): ?>
         <h1>Hi, guest!</h1>
         <p>Login in Facebook to get your events in the wall!</p>
-        <p><a class="btn btn-primary btn-lg">Facebook login</a></p>
+        <p><a class="btn btn-primary btn-lg" href="<?php echo $login_url; ?>">Facebook login</a></p>
+        <?php else: ?>
+        <h1>Hi, <?php echo $user_profile['name']; ?>!</h1>
+        <p>Check your wall right down!</p>        
+        <?php endif; ?>
       </div>
     </div>
 
