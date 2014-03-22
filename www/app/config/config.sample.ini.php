@@ -1,0 +1,3 @@
+[facebookapp]
+appId     = ''
+secret    = ''
