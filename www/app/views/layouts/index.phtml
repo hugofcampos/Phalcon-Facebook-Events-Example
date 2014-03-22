@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Events</h2>
+  
+  <div class="row">
+  <?php if($has_permission): ?>
+    <?php echo $this->getContent() ?>
+  <?php else: ?>
+    <p>Let us see your events!</p>
+    <p><a class="btn btn-primary btn-lg" href="<?php echo $login_url; ?>">Change permission</a></p>
+  <?php endif; ?>
+  </div> <!-- /row --> 
+</div> <!-- /container --> 
