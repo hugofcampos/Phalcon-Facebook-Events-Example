@@ -13,7 +13,7 @@ Clone this repo and run:
 
 Add the following line to your /etc/hosts (%Sysdir%/drivers/etc/hosts in Windows)
 
-    192.168.56.115 ingresse.dev
+    192.168.56.101 ingresse.dev
 
 Configure app:
 
