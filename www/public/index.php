@@ -14,7 +14,8 @@ try {
         '../app/libraries/'
     ))->registerNamespaces(array(
         'FBEvents\Controllers' => '../app/controllers',
-        'FBEvents\Libraries\Facebook' => '../app/libraries/Facebook'
+        'FBEvents\Libraries\Facebook' => '../app/libraries/Facebook',
+        // 'FBEvents\Events' => '../app/models/Events'
     ))->register();
 
     //Create a DI
@@ -44,6 +45,15 @@ try {
             'action' => 'index'
         ));
         return $router;
+    }, true);
+
+    $di->set('mongo', function() {
+        $mongo = new Mongo();
+        return $mongo->selectDb("fbevents");
+    }, true);
+
+    $di->set('collectionManager', function(){
+        return new Phalcon\Mvc\Collection\Manager();
     }, true);
 
     //Handle the request
