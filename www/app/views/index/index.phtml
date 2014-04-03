@@ -1,8 +1,10 @@
-<?php foreach ($events['data'] as $key => $event): ?>
+<?php foreach ($events as $key => $event): ?>
 
 <div class="col-lg-4">
-  <h3><?php echo $event['name']; ?></h3>
-  <p><?php echo $event['location']; ?></p>    
+  <h3><?php echo $event->name; ?></h3>
+  <p><?php echo $event->location; ?></p>
+  <p><?php echo date('m/d/Y', strtotime($event->start_time)); ?></p>
+  <p><?php echo $event->status; ?></p>
 </div>  
 
 <?php endforeach; ?>
